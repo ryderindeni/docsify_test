@@ -25,6 +25,14 @@ cloudrail run
 No cloud account is used in this analysis, showing all FAILUREs and WARNINGs.
 ✔ Preparing a filtered Terraform plan locally before uploading to Cloudrail Service...
 ✔ Downloading a custom Terraform Core binary created by Cloudrail
+
+Summary:
+7 Rules Violated:
+  0 Mandated Rules (these are considered FAILURES)
+  7 Advisory Rules (these are considered WARNINGS)
+0 Ignored Rules
+125 Rules Skipped (no relevant resources found)
+38 Rules Passed
 ```
  When asked if you'd like to send data to cloudrail, hit `y` and your results will appear momentarily.
 

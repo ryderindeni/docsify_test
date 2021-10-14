@@ -3,7 +3,11 @@
 * [About](about/about.md)
 * [Features](features/features.md)
 * [Integrations](integrations/overview.md)
-    * [CircleCI](integrations/circleci.md)
     * [AWS CodeBuild](integrations/aws-codebuild.md)
+    * [CircleCI](integrations/circleci.md)
+    * [Env0](integrations/env0.md)
+    * [GitLab](integrations/gitlab.md)
+    * [GitHub Actions](integrations/github-actions.md)
     * [Jenkins](integrations/jenkins.md)
-
+    * [Spacelift](integrations/spacelift.md)
+    * [Visual Studio Code](integrations/vs-code.md)
