@@ -3,6 +3,7 @@
 * [About](about/about.md)
 * [Features](features/features.md)
 * [Integrations](integrations/overview.md)
+    * [Atlantis](integrations/atlantis.md)
     * [AWS CodeBuild](integrations/aws-codebuild.md)
     * [CircleCI](integrations/circleci.md)
     * [Env0](integrations/env0.md)

@@ -1,7 +1,7 @@
 # Connecting Cloudrail with AWS CodeBuild
 This tutorial walks through the process of setting up AWS CodeBuild with Cloudrail for performing security scans on infrastructure as code.
 
-![AWS CodeBuild logo](../_media/integrations/codebuild_logo.png)
+![AWS CodeBuild logo](../_media/integrations/cloudrail_awscodebuild.png)
 
 ## How To Setup AWS CodeBuild with Cloudrail
 

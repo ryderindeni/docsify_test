@@ -1,8 +1,9 @@
 # Connecting AWS to Cloudrail
 
-![AWS logo >](../_media/integrations/aws_logo.png ':size=200')
+![AWS logo](../_media/integrations/cloudrail_aws.png)
 
 
+## How To Connect Cloudrail To Your AWS Account
 In the cloudrail web application, navigate to the [Cloud Management tab](https://web.cloudrail.app/environments/cloud-management).
 
 1. Click the ["Add Account" button](https://web.cloudrail.app/add-account) to be taken to the add account wizard.

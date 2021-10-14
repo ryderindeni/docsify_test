@@ -1,7 +1,7 @@
 # Connecting Cloudrail with Jenkins
 This tutorial walks through the process of setting up Jenkins with Cloudrail for performing security scans on infrastructure as code.
 
-![Jenkins logo](../_media/integrations/jenkins_logo.svg)
+![Jenkins logo](../_media/integrations/cloudrail_jenkins.png)
 
 ## How To Setup Jenkins with Cloudrail
 First, create a Jenkinsfile file or update an existing one.

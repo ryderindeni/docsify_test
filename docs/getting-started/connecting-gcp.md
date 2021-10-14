@@ -1,4 +1,4 @@
 # Connecting GCP to Cloudrail
 We're working on it! Check back soon.
 
-![Google Cloud Platform Logo](../_media/integrations/gcp_logo.png )
+![GCP logo](../_media/integrations/cloudrail_gcp.png)

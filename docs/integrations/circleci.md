@@ -2,7 +2,7 @@
 
 This tutorial walks through the process of setting up CircleCI with Cloudrail for performing security scans on infrastructure as code.
 
-![CircleCI logo](../_media/integrations/circleci_logo.png)
+![CircleCI logo](../_media/integrations/cloudrail_circleci.png)
 
 ## How To Setup CircleCI with Cloudrail
 

@@ -1,7 +1,7 @@
 # Cloudrail Account Setup
 The first step is to [sign up for a Cloudrail account](https://web.cloudrail.app/signup).
 
-![Create account Screenshot](../_media/screenshots/create_account.png)
+[![Create account Screenshot](../_media/screenshots/create_account.png)](https://web.cloudrail.app/signup)
 
 
 ## Next Steps
