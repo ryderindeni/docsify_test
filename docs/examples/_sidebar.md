@@ -4,3 +4,4 @@
 * [Features](features/features.md)
 * [Integrations](integrations/overview.md)
 
+    * [CircleCI](examples/circleci.md)

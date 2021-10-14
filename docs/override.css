@@ -1,0 +1,28 @@
+.markdown-section code,
+.markdown-section pre,
+.markdown-section pre > code {
+    color: #eee; /* default color for elements not styled by prism theme */
+    background-color: #18324F; /* dark background, because vue.css modify it */
+    /* background-image: radial-gradient(circle at 0px 0px, rgb(27, 50, 88), rgb(0, 86, 147)); */
+}
+
+/* because the bgcolor change in previous css rule. font-color when using inline code tag */
+.markdown-section code {
+    color: #fff; 
+}
+
+img[alt$=">"] {
+    float: right;
+  }
+  
+  img[alt$="<"] {
+    float: left;
+  }
+
+img[alt$="><"] {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    float: none!important;
+  }

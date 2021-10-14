@@ -1,4 +1,8 @@
-### Adding Cloudrail To Your Path
+# Adding the Cloudrail Command Line Tool to your PATH
+If you're having trouble adding the cloudrail command line tool to your path, here are a few steps to point you in the right direction.
+
+## OSX
+
 On OSX, you can add CloudRail to your PATH by running the following steps.
 
 First, find the binary directory of the python executable you're using.
