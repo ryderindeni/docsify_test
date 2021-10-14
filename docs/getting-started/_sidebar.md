@@ -1,4 +1,4 @@
-* [Home](/)
+* [Cloudrail Docs](/)
 * [Getting Started 🚀](getting-started/account-setup.md)
     * [Setup Account](getting-started/account-setup.md)
     * [Install CLI](getting-started/install-cli.md)

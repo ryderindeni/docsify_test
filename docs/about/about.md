@@ -1,7 +1,7 @@
 # About Indeni Cloudrail
 Cloudrail is a CLI tool that can run natively in several places in your workflow. Run it locally on your terraform files to check them before you commit, or integrate it as a step in your CI workflow for a bigger picture review of your infrastructure.
 
-[About YouTube Video](https://www.youtube.com/embed/MFvT2VnnBzE ':include :type=iframe height=400px')
+[About YouTube Video](https://www.youtube.com/embed/MFvT2VnnBzE ':include :type=iframe height=400px width=100%')
 
 ## How You Can Use It
 Cloudrail has two types of scan: **Static** and **Dynamic**.

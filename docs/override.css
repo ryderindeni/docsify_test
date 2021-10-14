@@ -1,28 +1,68 @@
+/* Code Block Styling */
 .markdown-section code,
 .markdown-section pre,
-.markdown-section pre > code {
-    color: #eee; /* default color for elements not styled by prism theme */
-    background-color: #18324F; /* dark background, because vue.css modify it */
-    /* background-image: radial-gradient(circle at 0px 0px, rgb(27, 50, 88), rgb(0, 86, 147)); */
+.markdown-section pre>code {
+  color: #eee;
+  background-color: #18324F;
+  background: url(/_media/dragon_cut_logo.svg) right bottom no-repeat rgb(27, 50, 88);
+  background-size: 25%;
 }
 
-/* because the bgcolor change in previous css rule. font-color when using inline code tag */
 .markdown-section code {
-    color: #fff; 
+  color: #fff;
 }
 
+/* Image Alignment Styling */
 img[alt$=">"] {
-    float: right;
-  }
-  
-  img[alt$="<"] {
-    float: left;
-  }
+  float: right;
+}
+
+img[alt$="<"] {
+  float: left;
+}
 
 img[alt$="><"] {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-    float: none!important;
-  }
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  float: none !important;
+}
+
+/* Indeni Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  color: rgb(89, 104, 129);
+}
+
+
+.sidebar {
+  background: url(/_media/dragon_cut_logo.svg) right bottom no-repeat rgb(27, 50, 88);
+  color: #fff;
+}
+
+.sidebar ul li a {
+  color: rgb(159, 181, 202);
+}
+
+
+.sidebar ul li.active>a {
+  color: #fff;
+
+}
+
+.sidebar-toggle {
+  background-color: #18324F;
+  width: auto;
+}
+
+.sidebar-toggle span {
+  background-color: #fff;
+}
+
+:root {
+  --theme-color: rgb(27, 50, 88);
+}

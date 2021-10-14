@@ -1,4 +1,4 @@
-* [Home](/)
+* [Cloudrail Docs](/)
 * [Getting Started 🚀](getting-started/account-setup.md)
 * [About](about/about.md)
     * [Overview](about/about.md)

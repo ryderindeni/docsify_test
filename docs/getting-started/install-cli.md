@@ -22,5 +22,5 @@ cloudrail --version
 
 If you receive a command not found error, [you'll need to add the python directory to your path](misc/adding-cloudrail-to-your-path.md). Otherwise, you're good to continue.
 
-## Next Step
+## Next Steps
 Now that you've got the CLI installed, you're ready to [scan some terraform files](getting-started/basic-use.md).
