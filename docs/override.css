@@ -4,7 +4,7 @@
 .markdown-section pre>code {
   color: #eee;
   background-color: #18324F;
-  background: url(/_media/dragon_cut_logo.svg) right bottom no-repeat rgb(27, 50, 88);
+  background: url(./_media/dragon_cut_logo.svg) right bottom no-repeat rgb(27, 50, 88);
   background-size: 25%;
 }
 
@@ -40,7 +40,7 @@ p {
 
 
 .sidebar {
-  background: url(/_media/dragon_cut_logo.svg) right bottom no-repeat rgb(27, 50, 88);
+  background: url(./_media/dragon_cut_logo.svg) right bottom no-repeat rgb(27, 50, 88);
   color: #fff;
 }
 
