@@ -1,6 +1,11 @@
 # Cloudrail Basic Use
 This tutorial walks through how to use the Cloudrail CLI to scan terraform files on your local machine for security vulnerabilities.
 
+
+### Prerequisites
+- [Cloudrail Account](getting-started/account-setup.md)
+- [CLI installed](getting-started/install-cli.md)
+
 ## How To Scan Your Terraform Files for Vulnerabilities
 To start, we'll use a simple example: a terraform repository on your local machine. Feel free to use your own, but if you don't have one - use our example.
 
