@@ -6,4 +6,4 @@
     * [Architecture](about/architecture.md)
 * [Features](features/features.md)
 * [Integrations](integrations/overview.md)
-
+* [Tutorials](misc/overview.md)

@@ -3,4 +3,4 @@
 * [About](about/about.md)
 * [Features](features/features.md)
 * [Integrations](integrations/overview.md)
-
+* [Tutorials](misc/overview.md)

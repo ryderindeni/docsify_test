@@ -8,7 +8,7 @@ To start, you'll need the following accounts:
 
 - AWS Account
 - Cloudrail Account
-- Github Account
+- GitHub Account
 - CircleCI Account
 
 

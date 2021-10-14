@@ -3,5 +3,5 @@
 * [About](about/about.md)
 * [Features](features/features.md)
 * [Integrations](integrations/overview.md)
-
     * [CircleCI](examples/circleci.md)
+* [Tutorials](misc/overview.md)

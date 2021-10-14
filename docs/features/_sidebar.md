@@ -6,4 +6,4 @@
     * [Single Sign-On (SSO)](features/sso.md)
     * [Task Center](features/task-center.md)
 * [Integrations](integrations/overview.md)
-
+* [Tutorials](misc/overview.md)
