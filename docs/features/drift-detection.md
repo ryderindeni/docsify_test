@@ -13,7 +13,7 @@ Cloudrail’s Drift Detection makes that experience a lot simpler with **auto-de
 ## How It Works
 Using Cloudrail’s unique approach of scanning your Infrastructure-as-Code with the context of your existing live state, Cloudrail has the ability to transparently identify configuration drifts on your behalf.
 
-Cloudrail’s Drift Detection feature works simply by running a Static + Dynamic assessment as you normally would. You will just need to add the flag “–drift-track”. This is because the Static + Dynamic assessment has all the information necessary to determine a configuration baseline. However, it is important to understand how a configuration baseline is determined, which we will expand in the following example:
+Cloudrail’s Drift Detection feature works simply by running a Static + Dynamic assessment as you normally would. You will just need to add the flag `–-drift-track`. This is because the Static + Dynamic assessment has all the information necessary to determine a configuration baseline. However, it is important to understand how a configuration baseline is determined, which we will expand in the following example:
 
 1. A team wants to deploy an RDS instance in their AWS environment. Before deploying, they will run Cloudrail in Static + Dynamic mode.
 
@@ -34,8 +34,8 @@ To review infrastructure drift in the Cloudrail app, follow these instructions
 2. Select the `Drift Detection` tab.
 3. Review all your cloud accounts to see if any of them have drifted. You can also use the search to look for a specific cloud account.
 
-4. Explore a specific drift by selecting an account and reviewing the drift details.
+![Drift detection page screenshot](../_media/screenshots/drift_detection_home.png)
 
-*In the following configuration drift example, it appears that additional roles were granted access to an AWS Secrets Manager in a dev environment and was not handled in Terraform.*
+4. Explore a specific drift by selecting an account and reviewing the drift details.
 
 5. Open a ticket. Cloudrail has a native Jira integration to open tickets and assign developers to address the drift.

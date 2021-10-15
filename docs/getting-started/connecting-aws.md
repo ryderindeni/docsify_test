@@ -4,13 +4,14 @@
 
 
 ## How To Connect Cloudrail To Your AWS Account
-In the cloudrail web application, navigate to the [Cloud Management tab](https://web.cloudrail.app/environments/cloud-management).
+1. In the cloudrail web application, navigate to the [Cloud Management tab](https://web.cloudrail.app/environments/cloud-management).
 
-1. Click the ["Add Account" button](https://web.cloudrail.app/add-account) to be taken to the add account wizard.
+2. Click the ["Add Account" button](https://web.cloudrail.app/add-account) to be taken to the add account wizard.
 
-2. Select `Amazon Web Services` as your cloud provider.
+3. Select `Amazon Web Services` as your cloud provider.
 
-3. Follow the on-screen instructions to create a Cloudformation stack. Cloudrail will provide a link to launch a CloudFormation stack with the required information automatically populated.
+4. Follow the on-screen instructions to create a Cloudformation stack. Cloudrail will provide a link to launch a CloudFormation stack with the required information automatically populated. Cloudrail will randomly generate an ExternalID and RoleName for you. **Please do not modify these parameters**.
+
 
 *Example cloudformation template*
 ```yaml

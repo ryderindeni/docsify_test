@@ -1,14 +1,21 @@
 # Cloudrail Integrations
-Cloudrail maintains several integrations with CI pipeline providers.
+Cloudrail is designed to be integrated into all CI pipelines. We maintain documentation and specific integrations for a few of the major ones:
 
-- AWS CodeBuild
-- CircleCI
-- GitLab
-- GitHub Actions
-- Jenkins
+- [AWS CodeBuild](integrations/aws-codebuild.md)
+- [CircleCI](integrations/circleci.md)
+- [GitLab](integrations/gitlab.md)
+- [GitHub Actions](integrations/github-actions.md)
+- [Jenkins](integrations/jenkins.md)
+- [Spacelift](integrations/spacelift.md)
+- [Env0](integrations/env0.md)
+- [Atlantis](integrations/atlantis.md)
 
-## Exit Codes
-If an error is encountered, cloudrail will return an exit code represented by the following list, independent of the pipeline provider.
+For developers, we also maintain an extension in Visual Studio Code:
+
+- [VS Code Extension](integrations/vs-code.md)
+
+## Command Line Exit Codes
+Regardless of the provider, cloudrail returns standardized exit codes when encountering an error. Detailed descriptions for each code are provided below.
 
 | Exit Code | Description |
 | ---| --- |

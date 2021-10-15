@@ -19,9 +19,9 @@ Whichever path you choose, make sure the cloudrail Python package is installed a
 
 In addition, you will need your Cloudrail API key. The API key can be found in the Settings tab in the Cloudrail web interface. You’ll want to save this in a secure place in Atlantis (there are various ways, depending on how you set up your secret management). You’ll need the API key when adding the Cloudrail call further below.
 
-Adding Cloudrail to a Custom Workflow:
+## Adding Cloudrail to a Custom Workflow
 
-Atlantis supports Custom Workflows. These are defined as part of the repos configuration (see Atlantis’ documentation on the --repo-config flag). In your repos configuration, add something like this:
+Atlantis supports Custom Workflows. These are defined as part of the repos configuration (see Atlantis’ documentation on the `--repo-config` flag). In your repos configuration, add something like this:
 
 
 ```yaml
@@ -59,21 +59,15 @@ The above will execute the Cloudrail CLI after the Terraform plan is done. It’
 
 In the above usage, Cloudrail is providing a textual output of the issues it found which are easy to read.
 
-NOTE:
+## Notes
 
-Make sure to set an environment variable with CLOUDRAIL_API_KEY as it’s used in the command.
-﻿
-The --cloud-account-name flag is required if you have more than one cloud account added in Cloudrail. You may use the name, as it appears within the Cloudrail web interface, or the account ID using the --cloud-account-id flag (like 123456789012 if it’s an AWS account). You can also replace it with --no-cloud-account to run an analysis without cloud account information.
-﻿
-The --auto-approve flag tells Cloudrail to filter and then upload the filtered plan without asking for human approval. This is the standard way Cloudrail is used in CI.
-﻿
-By default, rules in Cloudrail are set to Advise. This means that if any of these rules are violated, the Atlantis plan workflow will not be stopped and the results can be viewed in the Cloudrail web interface. If you want to have Cloudrail stop code merges of insecure infrastructure, you can set a policy for the cloud account and decide which rules should be set to Mandate. If a violation is found in a rule that is set to Mandate, Atlantis will show an error at the Plan stage and it will look like this (screenshot is from a GitHub PR):
+- Make sure to set an environment variable with `CLOUDRAIL_API_KEY` as it’s used in the command.
+- The `--cloud-account-name` flag is required if you have more than one cloud account added in Cloudrail. You may use the name, as it appears within the Cloudrail web interface, or the account ID using the `--cloud-account-id` flag (like 123456789012 if it’s an AWS account). You can also replace it with `--no-cloud-account` to run an analysis without cloud account information.
+- The `--auto-approve` flag tells Cloudrail to filter and then upload the filtered plan without asking for human approval. This is the standard way Cloudrail is used in CI.
+- By default, rules in Cloudrail are set to Advise. This means that if any of these rules are violated, the Atlantis plan workflow will not be stopped and the results can be viewed in the Cloudrail web interface. If you want to have Cloudrail stop code merges of insecure infrastructure, you can set a policy for the cloud account and decide which rules should be set to Mandate. If a violation is found in a rule that is set to Mandate, Atlantis will show an error at the Plan stage
+  - To resolve this, the developer simply needs to correct the security issue and push their code again. This will trigger the plan again (if it’s set to automatically trigger) and will run through Cloudrail automatically. If the violations are corrected, the plan will flow through successfully and the PR can be merged.
 
-
-To resolve this, the developer simply needs to correct the security issue and push their code again. This will trigger the plan again (if it’s set to automatically trigger) and will run through Cloudrail automatically. If the violations are corrected, the plan will flow through successfully and the PR can be merged.
-
-Advanced – Use the GitHub SARIF format
-
+## Using The Github SARIF Format
 If you use GitHub for your code repository and run your pull requests there, you can also leverage the GitHub SARIF format. You can change the above mentioned custom workflow to this:
 
 
@@ -110,12 +104,13 @@ workflows:
           exit 1 )
 ```
 
+## Notes
 In the above code, a few things are happening:
 
 We’re running Cloudrail like before, but we’ve added the output format and output file.
-﻿
+
 If Cloudrail returns a non-zero exit code (which will happen if violations are found in mandated rules), the code will also post the SARIF results back to the PR that kicked off this workflow. Note that you should replace mygithubtoken with a GitHub token that has security_events permission on the repo. Cloudrail does not have any access to this token, it is used by your Atlantis instance only and is not sent to Cloudrail.
+
 Note that sometimes the code scanning results may behave oddly and say “x analysis not found”. This happens because GitHub is attempting to compare the SARIF results from the PR with the SARIF results of the base branch (for example, main or master). If Cloudrail wasn’t run against the base branch, then GitHub cannot determine which issues are new and which are not. You can still click on the results though (see “Details”).
 
 Viewing the SARIF results in the GitHub’s PR view makes it easier to understand what part of the code has the issue and what needs to be done to fix it.
-

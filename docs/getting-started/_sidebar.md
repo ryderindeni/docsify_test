@@ -1,5 +1,5 @@
 * [Cloudrail Docs](/)
-* [Getting Started 🚀](getting-started/account-setup.md)
+* [Getting Started 🚀](#)
     * [Setup Account](getting-started/account-setup.md)
     * [Install CLI](getting-started/install-cli.md)
     * [Basic Use](getting-started/basic-use.md)

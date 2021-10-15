@@ -1,6 +1,6 @@
 * [Cloudrail Docs](/)
 * [Getting Started 🚀](getting-started/account-setup.md)
-* [About](about/about.md)
+* [About](#)
     * [Overview](about/about.md)
     * [Why Cloudrail?](about/why-cloudrail.md)
     * [Architecture](about/architecture.md)
